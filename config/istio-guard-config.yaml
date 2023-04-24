@@ -1,0 +1,7 @@
+server:
+  port: 9090
+  graceful_seconds: 30
+  log_request: true
+  log_response: true
+  cors: true
+  pprof: false

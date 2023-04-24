@@ -1,0 +1,22 @@
+name: sample-admission-validating-webhook
+Namespace: default
+reDeploy: false
+deleteDeployment: false
+owner: nguyentranbao
+imageName: sample-admission-validating-webhook
+imageVersion: 0.0.0-test
+runningCommand: ["./main"]
+metrics:
+  enabled: true
+replicaCount: 1
+service:
+  internalPort: 9090
+
+resources:
+  requests:
+    cpu: 0.1
+    memory: 64Mi
+
+  limits:
+    cpu: 0.2
+    memory: 128Mi
